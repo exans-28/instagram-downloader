@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DOWNLOAD VIDIOMU PANTEK</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="logo" title="Logo Website" aria-label="Logo Website">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 40 24">
+      <rect width="40" height="24" rx="6" ry="6" fill="#fff" />
+      <text x="20" y="16" font-size="12" text-anchor="middle" fill="#000" font-family="Arial" font-weight="bold">Logo</text>
+    </svg>
+  </div>
+  <main class="container" role="main" aria-label="Instagram Downloader">
+    <h1 style="position: relative;">Instagram Downloader</h1>
+    <label for="ig-link" style="display: block; text-align: center; margin-bottom: 0.6rem;">Masukkan link Instagram:</label>
+    <input type="text" id="ig-link" name="ig-link" placeholder="https://www.instagram.com/p/..." autocomplete="off" />
+    <div class="buttons">
+      <button id="paste-btn" type="button" aria-label="Paste link from clipboard">Paste</button>
+      <button id="download-btn" type="button" aria-label="Download video">Download</button>
+    </div>
+    <div id="status-container" style="margin-top: 1rem; text-align: center; color: #ffd6e8; font-weight: 600;"></div>
+    <section class="preview" aria-live="polite" aria-label="Video preview area" id="preview-section">
+      <video id="video-preview" controls></video>
+      <div class="message" id="preview-message"></div>
+    </section>
+  </main>
+  <button id="toggle-mode-btn" class="dark-mode-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">💡</button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
